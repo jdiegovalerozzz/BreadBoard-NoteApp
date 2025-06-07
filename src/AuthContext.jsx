@@ -1,4 +1,3 @@
-// AuthContext.js
 import { createContext, useContext, useState } from 'react';
 
 const AuthContext = createContext();
@@ -18,10 +17,10 @@ export function AuthProvider({ children }) {
 
   const register = (email, password) => {
     const users = JSON.parse(localStorage.getItem('users')) || [];
-    if (users.some(u => u.email === email)) return false; // Usuario ya existe
+    if (users.some(u => u.email === email)) return false; 
     users.push({ email, password });
     localStorage.setItem('users', JSON.stringify(users));
-    localStorage.setItem(`notes_${email}`, JSON.stringify([])); // Notas iniciales vacías
+    localStorage.setItem(`notes_${email}`, JSON.stringify([])); 
     setUser({ email });
     return true;
   };

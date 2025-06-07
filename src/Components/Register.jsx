@@ -1,4 +1,3 @@
-// Register.jsx
 import { useState } from 'react';
 import { useAuth } from '../AuthContext';
 import { useNavigate } from 'react-router-dom';
@@ -16,7 +15,7 @@ export default function Register() {
     e.preventDefault();
     if (register(email, password)) {
       alert('¡Registro exitoso! Redirigiendo...');
-      navigate('/notes'); // Redirige al editor de notas
+      navigate('/notes'); 
     } else {
       alert('El usuario ya existe');
     }
@@ -65,21 +64,3 @@ export default function Register() {
     </div>
   );
 }
-
-{/* <form onSubmit={handleSubmit}>
-      <input 
-        type="email" 
-        value={email} 
-        onChange={(e) => setEmail(e.target.value)} 
-        placeholder="Email" 
-        required 
-      />
-      <input 
-        type="password" 
-        value={password} 
-        onChange={(e) => setPassword(e.target.value)} 
-        placeholder="Password" 
-        required 
-      />
-      <button type="submit">Registrarse</button>
-    </form> */}

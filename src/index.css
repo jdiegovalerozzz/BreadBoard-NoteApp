@@ -11,5 +11,5 @@
 
 html, body {
   width: 100%;
-  overflow-x: hidden; /* Previene scroll horizontal */
+  overflow-x: hidden; 
 }
