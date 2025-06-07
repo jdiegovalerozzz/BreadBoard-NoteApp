@@ -1,0 +1,29 @@
+:root {
+    --fgreen: #5e6c5b;
+    --fcream: #F4EFE6;
+    --skyblue: #d6e0e2;
+    --cwhite: #FEFCF6;
+    --scloud: #686867;
+    --midnight: #162A2C;
+    --creamb: #e7a895;
+    --creamc: #cc775d;
+}
+
+
+.auth-button {
+  background: linear-gradient(135deg, var(--creamb), var(--creamc));
+  color: var(--cwhite);
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.auth-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}

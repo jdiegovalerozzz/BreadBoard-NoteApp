@@ -1,0 +1,41 @@
+:root {
+    --fgreen: #5e6c5b;
+    --fgreenLight: #83967f;
+    --fcream: #F4EFE6;
+    --skyblue: #d6e0e2;
+    --cwhite: #FEFCF6;
+    --scloud: #686867;
+    --midnight: #162A2C;
+    --dark: #181818 ;
+    --lightDark: #808080 ;
+    --creamb: #e7a895;
+
+}
+
+
+.auth-card {
+  background: var(--fcream);
+  padding: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.auth-footer {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: var(--dark);
+}
+
+.auth-footer a {
+  color: var(--creamb);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
